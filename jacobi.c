@@ -1,3 +1,10 @@
+/* 
+commend for pgprof
+pgcc -Mprof=lines jacobi.c  
+pgcollect ./a.out
+pgprof ./a.out ./pgprof.out 
+*/
+
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
