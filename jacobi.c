@@ -1,8 +1,15 @@
 /* 
-commend for pgprof
+command for pgprof
 pgcc -Mprof=lines jacobi.c  
 pgcollect ./a.out
 pgprof ./a.out ./pgprof.out 
+
+command for gcc profile for line
+gcc -std=c99 -lm -fprofile-arcs -ftest-coverage jacobi.c
+./a.out
+gcov jacobi.c
+cat jacobi.c.gcov
+
 */
 
 #include <stdio.h>
